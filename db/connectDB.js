@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 
+
 const URI =
   process.env.MONGODB_URL ||
-  "mongodb+srv://saber:saber123@cluster0.foj0k.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
+  "mongodb://localhost:27017/?readPreference=primary&appname=MongoDB%20Compass&directConnection=true&ssl=false";
 
 const connectDB = async () => {
   try {
